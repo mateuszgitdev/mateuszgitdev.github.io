@@ -1,0 +1,99 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.szalonewalizki.pl/wp-content/uploads/2018/10/KAM1027.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+}
+nav ul { list-style: none; display: flex; }
+nav ul li { margin-left: 20px; }
+nav ul li a { color: #fff; text-decoration: none; }
+
+.hero {
+    background: #000;
+    color: #fff;
+    /*padding: 20px 20px;*/
+    text-align: center;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero h2 { font-size: 32px; margin-bottom: 20px; }
+
+.about, .services, .blog, .portfolio, .contact {
+    padding: 40px 20px;
+}
+.services .service, .blog article, .portfolio .project {
+    border: 1px solid #eee;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+img { width: 100%; display: block; border-radius: 6px; }
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo {
+    width: 300px;
+}
+
+.services, .portfolio {
+    display: flex;             /* Aktywuje elastyczny układ */
+    justify-content: center;    /* Centruje kolumny w poziomie */
+    gap: 4px;                 /* Tworzy równe odstępy między usługami */
+    flex-wrap: wrap;           /* Pozwala przejść do nowej linii na telefonach */
+    /*padding: 40px;*/
+    text-align: center;        /* Centruje tekst wewnątrz */
+}
+
+.service, .project {
+    flex: 1;                   /* Sprawia, że każda kolumna ma tę samą szerokość */
+    min-width: 250px;          /* Zapobiega zbytniemu ściskaniu na małych ekranach */
+    /*max-width: 700px;          /* Opcjonalne: ogranicza szerokość na dużych ekranach */
+    padding: 20px;
+    border: 1px solid #ddd;    /* Delikatna ramka */
+    border-radius: 10px;       /* Zaokrąglone rogi */
+    background-color: #f9f9f9;
+}
+
+.service img {
+    max-width: 100%;           /* Obrazek nie wystaje poza kolumnę */
+    height: auto;
+    margin-top: 15px;
+}
+
+.services h4, .portfolio h2 {
+    width: 100%;               /* Sprawia, że nagłówek zajmuje całą górną linię */
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.palm {
+    height: 350px;
+}
+
+#palm2 {
+    transform: scaleX(-1);
+}
